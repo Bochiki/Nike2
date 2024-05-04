@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('download.jpeg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            height: 50px;
+            float: left;
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        .portfolio-item {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #333;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container, header, .about-section, footer {
+            animation: fadeIn 1s ease;
+        }
+        @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    
+    body header h1,
+    body .portfolio-item h2 {
+        animation: slideInFromLeft 1s ease;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images.jpeg" alt="Nike Logo" class="logo">
+            <h1>Nike</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="servises.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="portfolio-item">
+            
+            <h2>Unveiling the Power of the Nike Brand</h2>
+            <p>When most people think of Nike, they think of the Swoosh. 
+                It’s one of the most recognized symbols in the world. 
+                The brand it represents is our strongest asset. We’ve been
+                 very strategic in adding dimension to the Nike Brand, 
+                 making it a powerful and flexible engine for growth.</p>
+        </div>
+        <div class="portfolio-item">
+            
+            <h2>nveiling the Power of the Nike Brand</h2>
+            <p>Using the same kind of thoughtful and deliberate strategy, 
+                we’ve created a portfolio of brands capable of reaching across
+                 multiple sports, lifestyle categories, and price points.</p>
+        </div>
+        <div class="portfolio-item">
+        
+            <h2>nveiling the Power of the Nike Brand</h2>
+            <p>In addition to the Nike and Jordan brands, 
+                our wholly-owned subsidiaries include Cole Haan 
+                (luxury shoes, handbags, accessories and coats); 
+                Converse (athletic and lifestyle footwear, apparel and accessories); 
+                Hurley (action sports and youth lifestyle footwear, apparel and accessories); 
+                Nike Golf, and Umbro (a leading U.K. based football/soccer brand). Each strengthens 
+                our ability to maximize our reach and relevance worldwide.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nike. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

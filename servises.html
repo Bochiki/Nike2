@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('download.jpeg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            height: 50px;
+            float: left;
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        .service {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service:nth-child(1) {
+            animation-delay: 1s;
+        }
+
+        .service:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .service:nth-child(3) {
+            animation-delay: 3s;
+        }
+
+        .service:nth-child(4) {
+            animation-delay: 4s;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images.jpeg" alt="Nike Logo" class="logo">
+            <h1>Nike</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="service">
+            <img src="download (5).jpeg" alt="Athletic Footwear">
+            <h2>Athletic Footwear</h2>
+            <p>Explore our wide range of athletic footwear designed to enhance your performance and style on the field, track, or court.</p>
+        </div>
+        <div class="service">
+            <img src="download (1).jpeg" alt="Sportswear Apparel">
+            <h2>Sportswear Apparel</h2>
+            <p>Discover our collection of sportswear apparel featuring innovative fabrics and designs for ultimate comfort and mobility during your workouts and activities.</p>
+        </div>
+        <div class="service">
+            <img src="download (2).jpeg" alt="Training Equipment">
+            <h2>Training Equipment</h2>
+            <p>Equip yourself with the best training gear, including weights, resistance bands, and training accessories, to optimize your fitness routines.</p>
+        </div>
+        <div class="service">
+            <img src="download (4).jpeg" alt="Accessories">
+            <h2>Accessories</h2>
+            <p>Complete your athletic ensemble with our range of accessories, including bags, hats, and socks, designed to complement your style and performance.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nike. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

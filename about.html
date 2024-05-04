@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('NIKE+_HERO[1]_copy.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center; /* Center align all content within the header */
+        }
+
+        .logo {
+            height: 50px;
+            float: left;
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+    
+
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        .about-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            color: #007bff;
+            font-size: 28px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container, header, .about-section, footer {
+            animation: fadeIn 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images.jpeg" alt="Nike Logo" class="logo">
+            <h1>Nike</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="servises.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>About Nike</h2>
+            <p>Nike is known for its celebrity endorsement deals with top athletes, including Tiger Woods, LeBron James, and Serena Williams. The company has stayed relevant with consumers over the years through its savvy marketing, which includes embracing controversial topics</p>
+            <div class="image-container">
+                <img src="nike.jpg" alt="Nike Image" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nike. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
